@@ -1,0 +1,41 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <title>Contacto | Mariano Botta</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="formulario">
+            <form action="enviar.php" method="POST">
+                <fieldset>
+                    <legend>Informaci&oacute;n Personal:</legend>
+                    <div class="formrow">
+                        <label class="fixwidth" for="nombre">Nombre: </label>  <input type="text" name="nombre" value="">   
+                    </div>
+                    <div class="formrow">
+                        <label class="fixwidth" for="apellido">Apellido: </label>  <input type="text" name="apellido" value="">   
+                    </div>
+                    <div class="formrow">
+                        <span class="fixwidth">Sexo: </span>
+                              <label for="hombre">Hombre</label>
+                              <input type="radio" name="sexo" id="hombre" value="hombre"> 
+                              <label for="mujer">Mujer</label>
+                              <input type="radio" name="sexo" id="mujer" value="mujer"> 
+                    </div>      
+                    <div class="formrow">                      
+                        <label class="fixwidth" class="tetxup" for="coment">Comentario: </label> <textarea rows="4"  ></textarea> 
+                    </div>
+                    <div class="formrow">
+                        <input type="submit" value="Enviar"> 
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
+ 

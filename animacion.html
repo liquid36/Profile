@@ -1,0 +1,107 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <title>Mariano Botta</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery.js"></script>  
+        <script src="js/jqcolor.js"></script>  
+        <style>
+            html , body {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rectangulo" style="width:10%;height: 10%;background-color: red;"></div>
+        Opciones: <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                  </select> 
+                  <button id="btCalcular" type="button">Calcular</button>
+
+             
+        <script> 
+            $("#btCalcular").click(function(){
+                var op =$("select option:selected").val(); 
+                switch(op) {
+                    case "1":
+                        $("#rectangulo")
+                                .animate({
+                                    backgroundColor:"green"                            
+                                })
+                                .delay(1000)
+                                .animate({
+                                    backgroundColor:"red"                            
+                                });
+                        break;
+                    case "2":                        
+                        $("#rectangulo").animate({
+                            width:"100%"
+                        },1000).animate({
+                            width:"10%"
+                        },1000);
+                        break;
+                    case "3":
+                        $("#rectangulo").fadeOut().delay(1000).fadeIn();
+                        break;
+                    case "4":
+                        $("#rectangulo").animate({
+                            marginLeft:"50%",marginTop:"50%"
+                        },1000).animate({
+                            marginLeft:"-50%",marginTop:"0%"
+                        },100);
+                        break;
+                    case "5":    
+                        $("#rectangulo").animate({
+                            opacity:"0"
+                        },1000).animate({
+                            opacity:"1"
+                        },1000);
+                        break;
+                    case "6":    
+                        $("#rectangulo").css("position","absolute")
+                                .animate({
+                                    left:"90%"
+                                },1000).animate({
+                                    top:"90%"
+                                },1000).animate({
+                                    left:"0%"
+                                },1000).animate({
+                                    top:"0%"
+                                },1000).queue(function() {
+                                    $("#rectangulo").css("position","static");
+                                    $( this ).dequeue();
+                                });
+                        break;
+                    case "7":
+                        $("#rectangulo").css("position","absolute")
+                                .animate({
+                                    left:"50%",top:"50%"
+                                },1000).animate({
+                                    width:"100%",height:"100%",left:"0%",top:"0%"
+                                },1000).animate({
+                                    backgroundColor:"blue"                            
+                                }).delay(1000).animate({
+                                    left:"0%",top:"0%",width:"10%",height:"10%",backgroundColor:"red"    
+                                },1000).queue(function() {
+                                    $("#rectangulo").css("position","static");
+                                    $( this ).dequeue();
+                                }); 
+                        break;
+                }                
+            });
+
+        </script>    
+    </body>
+</html>
+ 
