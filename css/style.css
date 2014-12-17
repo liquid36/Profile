@@ -13,6 +13,8 @@ section {
     height: 100%;
 }
 
+.container-fluid, #contenido { height: 90% }
+
 @font-face {
 	font-family : 'MiFuente';
 	src: url('../font/FHACondFrenchNC.eot'); /* ie9 */
@@ -39,14 +41,13 @@ section {
  body {
      /*background-image: url('../img/fondo.jpg');  */
      background-color: bisque;
-     background-attachment: scroll;
      color:black;
      margin: 0;
      padding: 0;  
  } 
  
  hr {
-     color: #f00;
+    color: #f00;
     background-color: grey;
     height: 2px;     
  }
@@ -79,8 +80,7 @@ h3 {
     border: 3px white solid;
 }
 
-#datos {
-    float:left;
+#datos { 
     margin-left:20px;
 }
 
@@ -107,13 +107,13 @@ h3 {
 }
 
 .fondoB { 
-    padding-top:5px;
+    height: 100%;
+    padding-top:10px;
     padding-bottom:5px;
     padding-left: 60px;
     margin: 15px 0;
     background-image: url("../img/line.png");
-    background-repeat: repeat-y; 
-    height: 100%;
+    background-repeat: repeat-y;     
 } 
 
 .italic {
