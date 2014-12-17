@@ -5,6 +5,13 @@ a:visited
 a:hover
 a:active
  */
+html, body {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+}
 
 @font-face {
 	font-family : 'MiFuente';
@@ -29,20 +36,13 @@ a:active
 /****************************************************/
 
 
-html {
-    height: 100%;
-}
-
-
  body {
      /*background-image: url('../img/fondo.jpg');  */
-     height: 100%;
      background-color: bisque;
      background-attachment: scroll;
      color:black;
      margin: 0;
-     padding: 0;
-     position: relative;
+     padding: 0;  
  } 
  
  hr {
@@ -50,12 +50,6 @@ html {
     background-color: grey;
     height: 2px;     
  }
- 
- 
-body {
-	margin:0px;
-	padding:0px;
-}
 
 div{
 	margin:0px;
