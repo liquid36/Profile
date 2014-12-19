@@ -10,7 +10,7 @@ html, body {
 }
 
 section {
-    height: 100%;
+    height: 90%;
 }
 
 .container-fluid, #contenido { height: 90% }
@@ -69,26 +69,44 @@ div{
         padding-bottom: 10px;
 }
 
+#contenido{
+    margin:0px;
+    padding:0px;
+    background-color: bisque; 
+	font-size: 1.2em;	
+}
+
 h3 {
 	font-family: 'MiFuente' , arial;
-	text-align: left;
+	text-align: left; 
 	text-decoration: underline;
-        margin: 5px 0px;
+    margin: 5px 0px;
+	font-size: 1.5em;	
+}
+
+@media screen and (min-device-width: 481px) {
+
+	h3 {
+		font-size: 3em;
+	}
+
+	#contenido{  
+		font-size: 1.5em;
+	}
+
 }
 
 #perfil { 
     border: 3px white solid;
+	width:100%;
+	height:100%;
 }
 
 #datos { 
     margin-left:20px;
 }
 
-#contenido{
-    margin:0px;
-    padding:0px;
-    background-color: bisque;
-}
+
 
 .number {
     color:green;
@@ -107,11 +125,12 @@ h3 {
 }
 
 .fondoB { 
-    height: 100%;
-    padding-top:10px;
+    min-height: 105%;
+    padding-top:25px;
     padding-bottom:5px;
     padding-left: 60px;
-    margin: 15px 0;
+    margin: 10px 0;
+	margin-bottom:25px;
     background-image: url("../img/line.png");
     background-repeat: repeat-y;     
 } 
