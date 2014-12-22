@@ -12,7 +12,7 @@
 	</head>
 	<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
 		<a id="up" class="ancla" href="#" style="opacity:0;">
-			<img src="img/flecha_arriba.png" title="Ir al principio" style="position: fixed; bottom: 10px; right: 2%;width:5%;z-index: 10000;" />
+			<img id ="uprow" src="img/flecha_arriba.png" title="Ir al principio" />
 		</a>
 		<div class="container-fluid">
 			<div class="row">    
@@ -112,10 +112,17 @@
 							Lenguajes usados: COBOL,C#,C++.
 					</p>		
 					<p class="sangria"> 
-							T&eacute;cnico reparador de Pc. 2 a&ntilde;os de experiencia. Trabajo particular.
+							T&eacute;cnico reparador de Pc. 2 a&ntilde;os de experiencia. Trabajo particular. [<span class="number">2008</span>]	
 					</p >
 					<p class="sangria"> 
-							Pasant&iacute;a en CIFASIS. "Conversi&oacute;n de c&oacute;digo Modelica a Micro-Modelica". C/C++.
+							Pasant&iacute;a en CIFASIS. "Conversi&oacute;n de c&oacute;digo Modelica a Micro-Modelica". C/C++. [<span class="number">2013</span>]	
+					</p>
+					
+					<p class="sangria"> 
+						Desarrollo de Inteligencia Artificial para el juego de cartas conocido como Truco. HTML,CSS,JS. 
+						<a href="http://truco.movilizame.com.ar" title="Truco Argento" accesskey="1" target="_blank" >Truco Argento</a>.
+						(<a href="https://github.com/p4bl1t0/truco-argento" title="Codigo de Fuente Truco Argento" target="_blank" >Source Code</a>)
+						[<span class="number">2013</span>]		
 					</p>
 					
 				</div > 
@@ -254,7 +261,13 @@
 						$("html, body").animate({"scrollTop": 0 });
 					} else {
 						if ($(window).width() < 700) $("html, body").animate({"scrollTop": $(enlace).offset().top  - 10 }); 
-						else $("html, body").animate({"scrollTop": $(enlace).offset().top - nav.height() - 10 });
+						else $("html, body").animate({"scrollTop": $(enlace).offset().top - nav.height() - 10 })
+						                    .animate({"scrollTop": "+=50" },75)
+											.animate({"scrollTop": "-=90" },100)
+											.animate({"scrollTop": "+=70" },75)
+											.animate({"scrollTop": "-=50" },60)
+											.animate({"scrollTop": "+=30" },60)
+											.animate({"scrollTop": "-=10" },50);
 					}
         
                   });
