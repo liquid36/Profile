@@ -63,10 +63,10 @@ div{
 }
 
 #encabezado { 
-	margin:0px;
-	padding:0px; 
-        background-color: brown;
-        padding-bottom: 10px;
+	margin:0px;	
+	padding:0px;  
+    background-color: brown;
+    padding-bottom: 10px;
 }
 
 #contenido{
@@ -75,6 +75,20 @@ div{
     background-color: bisque; 
 	font-size: 1.2em;	
 }
+
+#home {
+	color:white;
+	padding: 10% 0;
+}
+
+#home h1 {
+	font-size: 500%;	
+}
+
+#home h4 {
+	color: #7F8C8D;
+}
+
 
 h3 {
 	font-family: 'MiFuente' , arial;

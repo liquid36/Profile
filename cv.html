@@ -1,198 +1,200 @@
 <!DOCTYPE html>
 <html>
 	<head>		
-                <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-                <link rel="stylesheet" type="text/css" href="css/style.css"/>
-                <script src="js/jquery.js" > </script>
-                <script src="bootstrap/js/bootstrap.min.js"></script>
-                <meta name="viewport" content="width=device-width, height=device-height">       
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js" > </script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, height=device-height">       
 		<title>
-				Mariano Botta | Curriculum Vitae
+			Mariano Botta | Curriculum Vitae
 		</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
-	<a href="#"><img src="img/flecha_arriba.png" title="Ir al principio" style="position: fixed; bottom: 10px; right: 2%;width:5%;z-index: 10000;" /></a>
-            <div class="container-fluid">
-                <div class="row">    
-                    <div id="encabezado" class="centrado col-xs-12">
-                            <a name="encabezado"> </a>
-                            <h1> Mariano Botta </h1>
-                            <h4> Curriculum Vitae </h4>	
-                            <div class="row navlist" style="display: none;" > 
-                                <div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#personal">              Datos Personales    </a></div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#estudios">              Estudios            </a></div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#trabajo">               Trabajo             </a></div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#experiencia">           Otras Experiencias  </a></div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#idiomas">               Idiomas             </a></div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 item" ><a onclick="div_show();" href="#">Contacto            </a></div>                      
-                            </div>       
-                            <nav class="navbar navbar-default " role="navigation">
-                                <div class="container-fluid"> 
-                                  <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                      <span class="sr-only">Toggle navigation</span>
-                                      <span class="icon-bar"></span>
-                                      <span class="icon-bar"></span>
-                                      <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#">CV</a>
-                                  </div>
-
-                                  <!-- Collect the nav links, forms, and other content for toggling -->
-                                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav navbar-nav">
-                                      <li><a class="ancla" href="#personal">Datos Personales</a></li>
-                                      <li><a class="ancla" href="#estudios">Estudios</a></li>
-                                      <li><a class="ancla" href="#trabajo">Trabajo</a></li>
-                                      <li><a class="ancla" href="#experiencia">Experiencias</a></li>
-                                      <li><a class="ancla" href="#idiomas">Idiomas</a></li>
-                                      <li><a onclick="div_show();" href="#">Contacto</a></li>
-                                    </ul>
-                                  </div><!-- /.navbar-collapse -->
-                                </div><!-- /.container-fluid -->
-                              </nav>
-                            
-                            
-                    </div>                      
-                </div>      
-		<div id="contenido" class="row">
-		<!--   Datos Personales -->
-                    <div id="personal" class="fondoB row">  			 
-						<h3> Datos Personales </h3>
-                        <div class="col-xs-12 col-sm-3">
-                            <img src="img/foto.jpg" id="perfil" class="img-circle"/>
-                        </div>    
-                        <div class="col-xs-12 col-sm-9">
-                            <p  id="datos"> 
-                                <strong> Nacimiento: </strong>  09/03/1990 <br>  
-                                <strong> Mail: </strong>  marianoabotta@gmail.com <br>
-                                <strong> Telefono: </strong>  341-3002351 <br>
-                                <strong> Ciudad: </strong>  Rosario <br>
-                                <a href="https://www.facebook.com/ma.botta" title="facebook page" target="_blank"> 
-                                    <img src="img/facebook-icon.png" class="icon" alt="facebook icon" title="facebook">   
-                                    ma.botta 
-                                </a><br>
-                                <a href="https://twitter.com/mbotta36" title="twitter page" target="_blank" >
-                                    <img src="img/twitter-icon.png" class="icon" alt="twitter icon" title="twitter">
-                                    mbotta36                                         
-                                </a>
-                            </p>
-                        </div>    
-                    </div> 
-                    <hr>
-                    <!--   Estudios --> 
-                    <div id="estudios" class="fondoB row">
-                        <h3> Estudios </h3>
-						<p class="sangria"> 
-							Estudio secundario en <span class="italic"> Escuela Superior de Comercio </span>. Bachillerato en econom&iacute;a y gesti&oacute;n de las organizaciones.
-                            <span class="number">2007</span>]
-                        </p>
-                        <p class="sangria"> 
-                                <a href="http://www.fceia.unr.edu.ar/lcc/"  title="LCC UNR"><span class="italic">Licenciatura en Ciencias de la Computaci&oacute;n:</span></a> 29 de 30 Materias Aprobadas. 
-                                Actualmente realiz&oacute; la tesina de grado sobre Aplaneamiento de Grandes Modelos Modelica [<span class="number">2014</span>]
-                        </p>
-                        <p class="sangria"> 
-                                <span class="italic">Presentation Layer Development:</span> Dictado en Fundaci&oacute;n Libertad. [<span class="number">2014</span>]		
-                        </p>
-                        <p class="sangria"> 
-                                Curso: <span class="italic">Teor&iacute;a de Compiladores.</span> [<span class="number">2012</span>]		
-                        </p>
-							<div class="col-xs-12 col-sm-2 pull-right">
-								<img src="img/libros.gif" style="width:100%;height:100%;">
-							</div>								
-                    </div>   
-                    <hr>
-                    <!--   Seccion de Trabajos -->
-                    <div class="fondoB row" id="trabajo"> 
-                        <h3> Trabajos Realizados </h3>				
-                        <p class="sangria"> 
-                                Actual: 4 a&ntilde;os de programador de sistema  de gesti&oacute;n empresarial en <a href="http://www.hipergas.com/"  title="HIPERGAS LINK"><strong>Italgas S.A</strong></a>. 
-                                Lenguajes usados: COBOL,C#,C++.
-                        </p>		
-                        <p class="sangria"> 
-                                T&eacute;cnico reparador de Pc. 2 a&ntilde;os de experiencia. Trabajo particular.
-                        </p >
-                        <p class="sangria"> 
-                                Pasant&iacute;a en CIFASIS. "Conversi&oacute;n de c&oacute;digo Modelica a Micro-Modelica". C/C++.
-                        </p>
-						
-                    </div > 
-                    <hr>			
+		<a id="up" class="ancla" href="#" style="opacity:0;">
+			<img src="img/flecha_arriba.png" title="Ir al principio" style="position: fixed; bottom: 10px; right: 2%;width:5%;z-index: 10000;" />
+		</a>
+		<div class="container-fluid">
+			<div class="row">    
+				<div id="encabezado" class="centrado col-xs-12">
+					<a name="encabezado"> </a>
+					<div id="home">
+						<h1> Mariano Botta </h1>
+						<h4> Curriculum Vitae </h4>	
+						<h4> Lic. Cs. Computaci&oacute;n </h4>	
+					</div>
+					<div class="row navlist" style="display: none;" > 
+						<div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#personal">              Datos Personales    </a></div>
+						<div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#estudios">              Estudios            </a></div>
+						<div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#trabajo">               Trabajo             </a></div>
+						<div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#experiencia">           Otras Experiencias  </a></div>
+						<div class="col-xs-6 col-sm-4 col-md-2 item" ><a href="#idiomas">               Idiomas             </a></div>
+						<div class="col-xs-6 col-sm-4 col-md-2 item" ><a onclick="div_show();" href="#">Contacto            </a></div>                      
+					</div>       
+					<nav class="navbar navbar-default " role="navigation">
+						<div class="container-fluid"> 
+						  <div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							  <span class="sr-only">Toggle navigation</span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">CV</a>
+						  </div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+							  <li><a class="ancla" href="#personal">Datos Personales</a></li>
+							  <li><a class="ancla" href="#estudios">Estudios</a></li>
+							  <li><a class="ancla" href="#trabajo">Trabajo</a></li>
+							  <li><a class="ancla" href="#experiencia">Experiencias</a></li>
+							  <li><a class="ancla" href="#idiomas">Idiomas</a></li>
+							  <li><a onclick="div_show();" href="#">Contacto</a></li>
+							</ul>
+						  </div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+				</div>                      
+			</div>      
+			<div id="contenido" class="row">
+			<!--   Datos Personales -->
+				<div id="personal" class="fondoB row">  			 
+					<h3> Datos Personales </h3>
+					<div class="col-xs-12 col-sm-3">
+						<img src="img/foto.jpg" id="perfil" class="img-circle"/>
+					</div>    
+					<div class="col-xs-12 col-sm-9">
+						<p  id="datos"> 
+							<strong> Nacimiento: </strong>  09/03/1990 <br>  
+							<strong> Mail: </strong>  marianobota@gmail.com <br>
+							<strong> Telefono: </strong>  341-3009999 <br>
+							<strong> Ciudad: </strong>  Rosario <br>
+							<a href="https://www.facebook.com/ma.botta" title="facebook page" target="_blank"> 
+								<img src="img/facebook-icon.png" class="icon" alt="facebook icon" title="facebook">   
+								ma.botta 
+							</a><br>
+							<a href="https://twitter.com/mbotta36" title="twitter page" target="_blank" >
+								<img src="img/twitter-icon.png" class="icon" alt="twitter icon" title="twitter">
+								mbotta36                                         
+							</a>
+						</p>
+					</div>    
+				</div> 
+				<hr>
+				<!--   Estudios --> 
+				<div id="estudios" class="fondoB row">
+					<h3> Estudios </h3>
+					<p class="sangria"> 
+						Estudio secundario en <span class="italic"> Escuela Superior de Comercio </span>. Bachillerato en econom&iacute;a y gesti&oacute;n de las organizaciones.
+						<span class="number">2007</span>]
+					</p>
+					<p class="sangria"> 
+							<a href="http://www.fceia.unr.edu.ar/lcc/"  title="LCC UNR"><span class="italic">Licenciatura en Ciencias de la Computaci&oacute;n:</span></a> 29 de 30 Materias Aprobadas. 
+							Actualmente realiz&oacute; la tesina de grado sobre Aplaneamiento de Grandes Modelos Modelica [<span class="number">2014</span>]
+					</p>
+					<p class="sangria"> 
+							<span class="italic">Presentation Layer Development:</span> Dictado en Fundaci&oacute;n Libertad. [<span class="number">2014</span>]		
+					</p>
+					<p class="sangria"> 
+							Curso: <span class="italic">Teor&iacute;a de Compiladores.</span> [<span class="number">2012</span>]		
+					</p>
+						<div class="col-xs-12 col-sm-2 pull-right">
+							<img src="img/libros.gif" style="width:100%;height:100%;">
+						</div>								
+				</div>   
+				<hr>
+				<!--   Seccion de Trabajos -->
+				<div class="fondoB row" id="trabajo"> 
+					<h3> Trabajos Realizados </h3>				
+					<p class="sangria"> 
+							Actual: 4 a&ntilde;os de programador de sistema  de gesti&oacute;n empresarial en <a href="http://www.hipergas.com/"  title="HIPERGAS LINK"><strong>Italgas S.A</strong></a>. 
+							Lenguajes usados: COBOL,C#,C++.
+					</p>		
+					<p class="sangria"> 
+							T&eacute;cnico reparador de Pc. 2 a&ntilde;os de experiencia. Trabajo particular.
+					</p >
+					<p class="sangria"> 
+							Pasant&iacute;a en CIFASIS. "Conversi&oacute;n de c&oacute;digo Modelica a Micro-Modelica". C/C++.
+					</p>
+					
+				</div > 
+				<hr>			
 			<!--   Seccion de experiencias -->
-                    <div class="fondoB row" id="experiencia"> 
-                        <h3> Otras Experiencias </h3>				
-                        <p class="sangria"> 
-                                Aplicaciones Android: Desarrollo y dise&ntilde;o de 
-                                 <a href="https://play.google.com/store/apps/details?id=com.samsoft.cuandollega&hl=es_419" title="Cuando Llega Pro" accesskey="1" target="_blank" >Cuando Llega Pro</a>.
-                                (<a href="https://github.com/liquid36/CuandoLlegaAndroid" title="Codigo de Fuente Cuando Llega" target="_blank" >Source Code</a>)
-                        </p>
-                        <p class="sangria"> 
-                                Operador de sistemas operativos Linux y Windows.
-                        </p>
-                        <p class="sangria"> 
-                                Manejo de Base de Datos SQLite, MySQL, DBMaker.
-                        </p>
-                     </div>  
-                    <hr>
-                    <!--   Seccion de Idionmas --> 
-                    <div id="idiomas" class="fondoB row"> 
-                        <h3> Idiomas </h3>
-                        <p class="sangria"> 
-                                <strong>Espa&ntilde;ol:</strong> Lengua nativa.
-                        </p>		
-                        <p class="sangria"> 
-                                <strong>Ingles:</strong> Lectura y habla fluida.
-                        </p>
-						<div class="col-xs-12 col-sm-4 pull-right">
-							<img src="img/idiomas.jpg" style="width:100%;height:100%;">
-						</div>	
-                    </div > 
-                    <hr/>
+				<div class="fondoB row" id="experiencia"> 
+					<h3> Otras Experiencias </h3>				
+					<p class="sangria"> 
+							Aplicaciones Android: Desarrollo y dise&ntilde;o de 
+							 <a href="https://play.google.com/store/apps/details?id=com.samsoft.cuandollega&hl=es_419" title="Cuando Llega Pro" accesskey="1" target="_blank" >Cuando Llega Pro</a>.
+							(<a href="https://github.com/liquid36/CuandoLlegaAndroid" title="Codigo de Fuente Cuando Llega" target="_blank" >Source Code</a>)
+					</p>
+					<p class="sangria"> 
+							Operador de sistemas operativos Linux y Windows.
+					</p>
+					<p class="sangria"> 
+							Manejo de Base de Datos SQLite, MySQL, DBMaker.
+					</p>
+				 </div>  
+				<hr>
+				<!--   Seccion de Idionmas --> 
+				<div id="idiomas" class="fondoB row"> 
+					<h3> Idiomas </h3>
+					<p class="sangria"> 
+							<strong>Espa&ntilde;ol:</strong> Lengua nativa.
+					</p>		
+					<p class="sangria"> 
+							<strong>Ingles:</strong> Lectura y habla fluida.
+					</p>
+					<div class="col-xs-12 col-sm-4 pull-right">
+						<img src="img/idiomas.jpg" style="width:100%;height:100%;">
+					</div>	
+				</div > 
+				<hr/>
 		</div> 
-            </div>
-            <div id="formulario" onclick="div_hide();">
-                <div id="popupContact">
-                <form action="enviar.php" method="POST" role="form">
-                    <!--<fieldset>
-                        <legend>Informaci&oacute;n Personal:</legend>-->
-                        <button id="exit" type="button" class="close exit"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h2>Contacto</h2>
-                        <hr>
-                        <div id="alertconteiner">
-                        
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group" id="gname" data-toggle="popover" data-placement="top" title="" data-content="Nombre y Apellido" data-trigger="focus">
-                              <label class="sr-only" for="name">Email address</label>
-                              <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-                              <input type="text" class="form-control" name="nombre" id="name"  placeholder="Nombre">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group" id="gmail" data-toggle="popover" data-placement="top" title="" data-content="Ingrese su mail" data-trigger="focus">
-                              <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                              <div class="input-group-addon">@</div>
-                              <input type="email" name="mail" class="form-control" id="mail" placeholder="Enter email">
-                            </div>
-                        </div>
-                        <div class="radio">
-                            <label class="radio-inline">
-                              <input type="radio" name="sexo" id="hombre" value="hombre" checked>
-                              Hombre
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="sexo" id="mujer" value="hombre" checked>
-                              Mujer
-                            </label>                            
-                        </div>
-                                                  
-                        <textarea rows="4" class="form-control" name="comentario" placeholder="Comentario" ></textarea> 
-                        
-                        <input id="submit" type="submit" class="btn btn-primary btn-block" value="Enviar" > 
-                   <!--</fieldset>-->
-                </form>
-                </div>
-            </div>
+    </div>
+	<div id="formulario" onclick="div_hide();">
+		<div id="popupContact">
+		<form action="enviar.php" method="POST" role="form">
+			<!--<fieldset>
+				<legend>Informaci&oacute;n Personal:</legend>-->
+				<button id="exit" type="button" class="close exit"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h2>Contacto</h2>
+				<hr>
+				<div id="alertconteiner">
+				
+				</div>
+				<div class="form-group">
+					<div class="input-group" id="gname" data-toggle="popover" data-placement="top" title="" data-content="Nombre y Apellido" data-trigger="focus">
+					  <label class="sr-only" for="name">Email address</label>
+					  <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+					  <input type="text" class="form-control" name="nombre" id="name"  placeholder="Nombre">
+				   </div>
+				</div>
+				<div class="form-group">
+					<div class="input-group" id="gmail" data-toggle="popover" data-placement="top" title="" data-content="Ingrese su mail" data-trigger="focus">
+					  <label class="sr-only" for="exampleInputEmail2">Email address</label>
+					  <div class="input-group-addon">@</div>
+					  <input type="email" name="mail" class="form-control" id="mail" placeholder="Enter email">
+					</div>
+				</div>
+				<div class="radio">
+					<label class="radio-inline">
+					  <input type="radio" name="sexo" id="hombre" value="hombre" checked>
+					  Hombre
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="sexo" id="mujer" value="hombre" checked>
+					  Mujer
+					</label>                            
+				</div>
+										  
+				<textarea rows="4" class="form-control" name="comentario" placeholder="Comentario" ></textarea> 
+				
+				<input id="submit" type="submit" class="btn btn-primary btn-block" value="Enviar" > 
+		   <!--</fieldset>-->
+		</form>
+		</div>
+	</div>
             <script>
                 function div_show() {
                     $("#formulario").fadeIn(500); 
@@ -239,6 +241,8 @@
 						}
 						$("body").scrollspy('refresh');
 					}	
+					if ($(window).scrollTop() > 400 ) $("#up").css("opacity",1);
+					else $("#up").css("opacity",$(window).scrollTop() / 400);
                 });
                 
                 $('body').scrollspy({ target: '.navbar-default',offset:75 });
@@ -246,9 +250,12 @@
                 $('a.ancla').click(function (event) { 
                     event.preventDefault();
                     var enlace = $(this).attr("href");
-                    console.log( $(enlace).offset().top + "  - " + nav.height() );
-					if ($(window).width() < 700) $("html, body").animate({"scrollTop": $(enlace).offset().top  - 10 }); 
-					else $("html, body").animate({"scrollTop": $(enlace).offset().top - nav.height() - 10 });
+					if (enlace == "#") {
+						$("html, body").animate({"scrollTop": 0 });
+					} else {
+						if ($(window).width() < 700) $("html, body").animate({"scrollTop": $(enlace).offset().top  - 10 }); 
+						else $("html, body").animate({"scrollTop": $(enlace).offset().top - nav.height() - 10 });
+					}
         
                   });
                   
